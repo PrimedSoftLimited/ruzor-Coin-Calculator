@@ -1,6 +1,8 @@
 // creates new table row and appends to parent table
 function tr() {
-    document.getElementById("image-con").appendChild(document.createElement("tr"));
+    var row = document.createElement("tr");
+    document.getElementById("image-con").appendChild(row);
+    row.style.display = "flex";
 }
 
 // creates new table data cell and appends to parent row
